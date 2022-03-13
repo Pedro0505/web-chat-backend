@@ -36,7 +36,5 @@ Agora vá para o repósitorio de [Front](https://github.com/Pedro0505/web-chat-f
 
 ## Referência
 
- - [React.Js](https://pt-br.reactjs.org)
  - [Node.JS](https://nodejs.org/api/)
- - [Vite.JS](https://vitejs.dev)
  - [Socket.IO](https://socket.io)
