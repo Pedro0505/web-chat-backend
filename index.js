@@ -13,7 +13,6 @@ const io = new Server(server, {
   cors: {
     origin: 'https://web-chat-front-lemon.vercel.app/',
     methods: ['GET', 'POST'],
-    credentials: true,
   },
 });
 
