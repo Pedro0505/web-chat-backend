@@ -7,11 +7,13 @@ const { Server } = require('socket.io');
 
 app.use(cors());
 
+const PORT = process.env.PORT || 3001;
+
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://web-chat-front-lemon.vercel.app/',
+    origin: '*',
     methods: ['GET', 'POST'],
   },
 });
@@ -34,6 +36,6 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(3001, () => {
+server.listen(PORT, () => {
   console.log('Online');
 });
