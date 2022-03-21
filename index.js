@@ -7,6 +7,8 @@ const { Server } = require('socket.io');
 
 app.use(cors());
 
+app.get('/', (req, res) => res.status(200).send('Everything Working'));
+
 const PORT = process.env.PORT || 3001;
 
 const server = http.createServer(app);
@@ -37,5 +39,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(PORT, () => {
-  console.log('Online');
+  console.log(`Online na porta: ${PORT}`);
 });
